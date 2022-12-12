@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Hello</title>
+</head>
+<body>
+   <button id="hide">hide</button>
+   <button id="show">show</button>
+   <button id="toggle">toggle</button>
+   <p class="p1">computer 1</p>
+   <p class="para p2">computer 2</p>
+   <p class="para p3">computer 3</p>
+   <p class="para p4">computer 4</p>
+   <p class="para p5">computer 5</p>
+   <script>
+    $(document).ready(function(){
+        $("#hide").click(function(){
+            $(".para").hide();
+        });
+        $("#show").click(function(){
+            $(".para").show();
+        });
+        $("#toggle").click(function(){
+            $(".p1").toggle();
+        });
+    });
+   </script>
+
+</body>
+</html>
